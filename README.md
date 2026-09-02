@@ -7,27 +7,33 @@ Al finalizar del proceso, el programa muestra la canción que tiene la misma pun
  
 ALGORITMO
 
-Guardar musica de bad bunny según la puntuación que representa (se irán agregando mas preguntas)
+emoción = input("como te sientes el dia de hoy?")
 
-print "Cuál es tu emoción de hoy?
 
-input ()
+if emoción == "Feliz":
+    puntos_emoción = 3
 
-if emoción == Feliz, dar 3 puntos
+if emoción == "Motivado":
+    puntos_emoción = 2
 
-if emoción == Motivado, dar 2 puntos
+if emoción == "Triste":
+    puntos_emoción = 1
 
-if emoción == Triste, dar 1 punto
+genéro = input("que género te gustaría escuchar hoy?")
 
-print "que género te gustaría escuchar hoy?"
 
-if género == POP, dar 3 puntos
+if género == "Pop": 
+    puntos_género = 3
+    
+if género == "Trap":
+    puntos_género = 2
 
-if género == Trap, dar 2 puntos
+if género == "Salsa":
+    puntos_género: 1
 
-if genero == Salsa, dar 1 punto
+Total = puntos_emoción + puntos_género
 
-Total == puntos de la emoción + puntos del género
+
 
 
 
