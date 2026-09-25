@@ -1,3 +1,19 @@
+print("BIENVENIDO A BUNNY-STATION")
+
+def saludar_usuario(nombre):
+    print("hola",nombre)
+nombre = input("Cual es tu nombre?:")
+saludo = saludar_usuario(nombre)
+
+def inicio_usuario():
+    inicio = input("estas listo para encontrar tu musica de hoy? si,no:")
+    if inicio == "si":
+        print ("continuemos")
+    else: 
+        print("programa terminado")
+        exit()
+inicio_usuario()
+
 emocion = input("como te sientes el dia de hoy?")
 
 if emocion == "feliz":
