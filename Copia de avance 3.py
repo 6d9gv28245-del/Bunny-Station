@@ -141,11 +141,11 @@ if total == 130:
     print("5. Kloufrens")
     
 def mensaje(total):
-    if total == 50:
+    if total >= 50 and total <= 70:
         print("¡Muy buena elección!")
-    elif total == 90:
+    elif total >= 80 and total <= 100:
         print("¡Esta combinación se escucha bien!")
-    elif total == 100:
+    elif total >= 110 and total <= 130:
         print("¡Hoy necesitas canciones muy intensas!")
 
 mensaje(total)
