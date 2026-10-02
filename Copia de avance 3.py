@@ -76,7 +76,7 @@ if total == 50:
     print("4. Otra noche en miami")
     print("5. Solo de mi")
 
-if total == 90:  
+if total == 60:  
     print("CANCIONES RECOMENDADAS:")
     print("1. Si veo a tu mama")
     print("2. La dificil")
@@ -84,7 +84,7 @@ if total == 90:
     print("4. La santa")
     print("5. La zona")
 
-if total == 100:    
+if total == 70:    
     print("CANCIONES RECOMENDADAS:")
     print("1. El mundo es mio")
     print("2. Te mudaste")
@@ -92,7 +92,54 @@ if total == 100:
     print("4. Yo visto asi")
     print("5. La noche de anoche")
 
+if total == 80:
+    print("CANCIONES RECOMENDADAS")
+    print("1. Moscow mule")
+    print("2. Despues de la playa")
+    print("3. Un ratito")
+    print("4. Neverita")
+    print("5. Efecto")
 
+if total == 90:
+    print("CANCIONES RECOMENDADAS")
+    print("1. Nadie sabe")
+    print("2. Monaco")
+    print("3. Fina")
+    print("4. Hibiki")
+    print("5. Mr october")
+
+if total == 100: 
+    print("CANCIONES RECOMENDADAS")
+    print("1. Nuevayol")
+    print("2. Voy a llevarte pa pr")
+    print("3. Baile inolvidable")
+    print("4. Perfumito nuevo")
+    print("5. weltita")
+
+if total == 110:
+    print("CANCIONES RECOMENDADAS")
+    print("1. Como antes")
+    print("2. Vete")
+    print("3. Booker t")
+    print("4. Dakiti")
+    print("5. Party")
+
+if total == 120:
+    print("CANCIONES RECOMENDADAS")
+    print("1. Ojitos lindos")
+    print("2. Un coco")
+    print("3. Los pits")
+    print("4. Acho pr")
+    print("5. Enseñame a bailar")
+
+if total == 130:
+    print("CANCIONES RECOMENDADAS")
+    print("1. Ignorantes")
+    print("2. Una vez")
+    print("3. Trellas")
+    print("4. El apagon")
+    print("5. Kloufrens")
+    
 def mensaje(total):
     if total == 50:
         print("¡Muy buena elección!")
