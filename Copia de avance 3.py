@@ -14,7 +14,7 @@ def inicio_usuario():
         exit()
 inicio_usuario()
 
-emocion = input("como te sientes el dia de hoy?")
+emocion = input("como te sientes el dia de hoy?: (feliz,motivado,triste)")
 
 if emocion == "feliz":
     puntos_emocion = 10
@@ -25,7 +25,7 @@ if emocion == "motivado":
 if emocion == "triste":
     puntos_emocion = 30
 
-genero = input("que genero te gustaría escuchar hoy?")
+genero = input("que genero te gustaría escuchar hoy?: (pop,trap,sadcore)")
 
 if genero == "pop": 
     puntos_genero = 10
@@ -36,7 +36,7 @@ if genero == "trap":
 if genero == "sadcore":
     puntos_genero = 30
     
-actividad = input("que estas haciendo?")
+actividad = input("que estas haciendo?: (tarea,limpiando,descansando)")
 
 if actividad == "tarea":
     puntos_actividad = 10
@@ -47,7 +47,7 @@ if actividad == "limpiando":
 if actividad == "descansando":
     puntos_actividad = 30
     
-preferencia = input("quieres escuchar una cancion para cantar o relajarte?")
+preferencia = input("quieres escuchar una cancion para cantar o relajarte?: (cantar,relajarme)")
 
 if preferencia == "cantar":
     puntos_preferencia = 10
@@ -55,7 +55,7 @@ if preferencia == "cantar":
 if preferencia == "relajarme":
     puntos_preferencia = 20
     
-horario = input("es de dia o de noche?")
+horario = input("es de dia o de noche?: (dia,noche)")
 if horario == "dia":
     puntos_horario = 10
 if horario == "noche":
