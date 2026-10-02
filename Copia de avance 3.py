@@ -69,16 +69,28 @@ print(total)
 
 
 if total == 50:
-    print("CANCIÓNES RECOMENDADAS:")
-    print("1.NADIE SABE LO QUE VA A PASAR MAÑANA")
-    print("2.Vete")
+    print("CANCIONES RECOMENDADAS:")
+    print("1. Ni bien ni mal")
+    print("2. Quien tu eres?")
+    print("3. Tenemos que hablar")
+    print("4. Otra noche en miami")
+    print("5. Solo de mi")
+
 if total == 90:  
-    print("3.MR.OCTOBER")
-    print("4.BOOKER T")
-    
+    print("CANCIONES RECOMENDADAS:")
+    print("1. Si veo a tu mama")
+    print("2. La dificil")
+    print("3. Pero ya no")
+    print("4. La santa")
+    print("5. La zona")
+
 if total == 100:    
-    print("5.VUELVE CANDY B")
-    print("6.MONACO")
+    print("CANCIONES RECOMENDADAS:")
+    print("1. El mundo es mio")
+    print("2. Te mudaste")
+    print("3. Hoy cobre")
+    print("4. Yo visto asi")
+    print("5. La noche de anoche")
 
 
 def mensaje(total):
