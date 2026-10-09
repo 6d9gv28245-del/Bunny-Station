@@ -40,7 +40,7 @@ while continuar == "si":
         puntos_genero = 10
     elif genero == "trap":
         puntos_genero = 20
-     elif genero == "sadcore":
+    elif genero == "sadcore":
         puntos_genero = 30
     else:
         print("respuesta no valida")
@@ -52,7 +52,7 @@ while continuar == "si":
         puntos_actividad = 10
     elif actividad == "limpiando":
         puntos_actividad = 20
-     elif actividad == "descansando":
+    elif actividad == "descansando":
         puntos_actividad = 30
     else:
         print("respuesta no valida")
