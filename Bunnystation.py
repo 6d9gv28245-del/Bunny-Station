@@ -14,6 +14,10 @@ def inicio_usuario():
         exit()
 inicio_usuario()
 
+continuar = "si"
+
+while continuar == "si":
+
 emocion = input("como te sientes el dia de hoy?: (feliz,motivado,triste)")
 
 if emocion == "feliz":
@@ -150,6 +154,9 @@ def mensaje(total):
 
 mensaje(total)
 
+continuar = input("quieres otra recomndación?:(si/no)")
+
+print("gracias por usar BUNNY-STATION :)"
 
 
 
