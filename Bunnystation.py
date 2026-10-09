@@ -28,7 +28,7 @@ while continuar == "si":
         puntos_emocion = 10
     elif emocion == "motivado":
         puntos_emocion = 20
-    if emocion == "triste":
+    elif emocion == "triste":
         puntos_emocion = 30
     else:
         print("respuesta no valida")
