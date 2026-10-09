@@ -153,7 +153,7 @@ while continuar == "si":
         elif total >= 110 and total <= 130:
             print("¡Hoy necesitas canciones muy intensas!")
 
-    mensaje(total)3
+    mensaje(total)
 
     continuar = input("quieres otra recomndación?:(si/no)")
 
