@@ -22,8 +22,8 @@ lista_canciones = {
     50:["Ni bien ni mal","Quien tu eres","Tenemos que hablar","Otra noche en miami","Solo de mi"],
     60:["Si veo a tu mama","La dificil","Pero ya no","La santa","La zona"],   
     70:["El mundo es mio","Te mudaste","Hoy cobre","Yo visto asi","La noche de anoche"],
-    80:["Moscow mule,"despues de la playa","Un ratito","Neverita","Efecto"],
-    90::["Nadie sabe","Monaco","Fina","Hibiki","Mr october"],
+    80:["Moscow mule","despues de la playa","Un ratito","Neverita","Efecto"],
+    90:["Nadie sabe","Monaco","Fina","Hibiki","Mr october"],
     100:["Nuevayol","Voy a llevarte pa pr","Baile inolvidable","Perfumito nuevo","Weltita"],
     110:["Como antes","Vete","Booker t","Dakiti","Party"],
     120:["Ojitos lindos","Un coco","Los pits","Acho pr","Enseñame a bailar"],
@@ -99,16 +99,16 @@ while continuar == "si":
 
     print("CANCIONES RECOMENDADAS")
 
-    if total in listas_canciones:
-        canciones = listas_canciones[total]
+    if total in lista_canciones:
+        canciones = lista_canciones[total]
         print("1.",canciones[0])
         print("2.",canciones[1])
-        prit("3.",canciones[2])
+        print("3.",canciones[2])
         print("4.",canciones[3])
         print("5.",canciones[4])
         
     
-     def mensaje(total):
+    def mensaje(total):
         if total >= 50 and total <= 70:
             print("¡Muy buena elección!")
         elif total >= 80 and total <= 100:
