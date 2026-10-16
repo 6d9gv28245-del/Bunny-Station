@@ -97,80 +97,18 @@ while continuar == "si":
     print("PUNTOS OBTENIDOS:")
     print(total)
 
+    print("CANCIONES RECOMENDADAS")
 
-    if total == 50:
-        print("CANCIONES RECOMENDADAS:")
-        print("1. Ni bien ni mal")
-        print("2. Quien tu eres?")
-        print("3. Tenemos que hablar")
-        print("4. Otra noche en miami")
-        print("5. Solo de mi")
-
-    elif total == 60:  
-        print("CANCIONES RECOMENDADAS:")
-        print("1. Si veo a tu mama")
-        print("2. La dificil")
-        print("3. Pero ya no")
-        print("4. La santa")
-        print("5. La zona")
-
-    elif total == 70:    
-        print("CANCIONES RECOMENDADAS:")
-        print("1. El mundo es mio")
-        print("2. Te mudaste")
-        print("3. Hoy cobre")
-        print("4. Yo visto asi")
-        print("5. La noche de anoche")
-
-    elif total == 80:
-        print("CANCIONES RECOMENDADAS")
-        print("1. Moscow mule")
-        print("2. Despues de la playa")
-        print("3. Un ratito")
-        print("4. Neverita")
-        print("5. Efecto")
-
-    elif total == 90:
-        print("CANCIONES RECOMENDADAS")
-        print("1. Nadie sabe")
-        print("2. Monaco")
-        print("3. Fina")
-        print("4. Hibiki")
-        print("5. Mr october")
-
-    elif total == 100: 
-        print("CANCIONES RECOMENDADAS")
-        print("1. Nuevayol")
-        print("2. Voy a llevarte pa pr")
-        print("3. Baile inolvidable")
-        print("4. Perfumito nuevo")
-        print("5. weltita")
-
-    elif total == 110:
-        print("CANCIONES RECOMENDADAS")
-        print("1. Como antes")
-        print("2. Vete")
-        print("3. Booker t")
-        print("4. Dakiti")
-        print("5. Party")
-
-    elif total == 120:
-        print("CANCIONES RECOMENDADAS")
-        print("1. Ojitos lindos")
-        print("2. Un coco")
-        print("3. Los pits")
-        print("4. Acho pr")
-        print("5. Enseñame a bailar")
-
-    elif total == 130:
-        print("CANCIONES RECOMENDADAS")
-        print("1. Ignorantes")
-        print("2. Una vez")
-        print("3. Trellas")
-        print("4. El apagon")
-        print("5. Kloufrens")
+    if total in listas_canciones:
+        canciones = listas_canciones[total]
+        print("1.",canciones[0])
+        print("2.",canciones[1])
+        prit("3.",canciones[2])
+        print("4.",canciones[3])
+        print("5.",canciones[4])
+        
     
-    def mensaje(total):
+     def mensaje(total):
         if total >= 50 and total <= 70:
             print("¡Muy buena elección!")
         elif total >= 80 and total <= 100:
