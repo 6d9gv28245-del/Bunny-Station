@@ -30,8 +30,8 @@ lista_canciones = {
     130:["Ignorantes","Una vez","Trellas","El apagon","Kloufrens"]
 }
 canciones_genero = [
-    ["pop","Moscow mule","Neverita","Efecto"]
-    ["Trap","Chambea","Booker t","Dakiti"]
+    ["pop","Moscow mule","Neverita","Efecto"],
+    ["Trap","Chambea","Booker t","Dakiti"],
     ["Sadcore","Amorfoda","Otro atardecer",un coco"]
 ]
 
@@ -102,9 +102,9 @@ while continuar == "si":
     print(total)
     print("Canciones recomendadas segun tu genero")
     for file in canciones_genero:
-        if genero == fila[0]
-        for i in range(1,len(fila)):
-            print(i,fila[i]
+        if genero == fila[0]:
+            for i in range(1,len(fila)):
+                print(i,fila[i]
 
     print("CANCIONES RECOMENDADAS")
 
