@@ -40,7 +40,7 @@ continuar = "si"
 while continuar == "si":
 
     emocion = input("como te sientes el dia de hoy?: (feliz,motivado,triste)")
-
+    emocion = emocion.lower().strip()
     if emocion == "feliz":
         puntos_emocion = 10
     elif emocion == "motivado":
@@ -52,7 +52,7 @@ while continuar == "si":
         continue
     
     genero = input("que genero te gustaría escuchar hoy?: (pop,trap,sadcore)")
-
+    genero = genero.lower().strip()
     if genero == "pop": 
         puntos_genero = 10
     elif genero == "trap":
@@ -64,7 +64,7 @@ while continuar == "si":
         continue
     
     actividad = input("que estas haciendo?: (tarea,limpiando,descansando)")
-
+    actividad = actividad.lower().strip()
     if actividad == "tarea":
         puntos_actividad = 10
     elif actividad == "limpiando":
@@ -76,7 +76,7 @@ while continuar == "si":
         continue
     
     preferencia = input("quieres escuchar una cancion para cantar o relajarte?: (cantar,relajarme)")
-
+    preferencia = preferencia.lower().strip()
     if preferencia == "cantar":
         puntos_preferencia = 10
 
@@ -87,7 +87,7 @@ while continuar == "si":
         continue
     
     horario = input("es de dia o de noche?: (dia,noche)")
-    
+    horario = horario.lower().strip()
     if horario == "dia":
         puntos_horario = 10
     elif horario == "noche":
