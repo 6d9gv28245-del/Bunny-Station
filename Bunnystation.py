@@ -4,12 +4,20 @@ print("       TU MUSICA, TU MOMENTO")
 print("====================================")
 
 def saludar_usuario(nombre):
+    print("--------------------------------------------")
     print("hola",nombre,"!", "Bienvenid@ a BUNNY-STATION :)")
+    print("--------------------------------------------")
+
 nombre = input("Cual es tu nombre?:")
 saludo = saludar_usuario(nombre)
 
+
 def inicio_usuario():
-    inicio = input("estas listo para encontrar tu musica de hoy? si,no:")
+    print()
+    print("               MENU PRINCIPAL")
+    print("--------------------------------------------")
+   inicio = input("estas listo para encontrar tu musica de hoy? si,no:")
+    
     if inicio == "si":
         print ("Okay! continuemos")
     elif inicio == "no": 
@@ -41,9 +49,15 @@ canciones_genero = [
 continuar = "si"
 
 while continuar == "si":
+    print()
+    print("============================================")
+    print("             PERSONALIZA TU MUSICA")
+    print("============================================")
+    print()
 
     emocion = input("como te sientes el dia de hoy?: (feliz,motivado,triste)")
     emocion = emocion.lower().strip()
+    
     if emocion == "feliz":
         puntos_emocion = 10
     elif emocion == "motivado":
@@ -53,9 +67,11 @@ while continuar == "si":
     else:
         print("respuesta no valida")
         continue
+    print()
     
     genero = input("que genero te gustaría escuchar hoy?: (pop,trap,sadcore)")
     genero = genero.lower().strip()
+    
     if genero == "pop": 
         puntos_genero = 10
     elif genero == "trap":
@@ -65,7 +81,8 @@ while continuar == "si":
     else:
         print("respuesta no valida")
         continue
-    
+    print()
+   
     actividad = input("que estas haciendo?: (tarea,limpiando,descansando)")
     actividad = actividad.lower().strip()
     if actividad == "tarea":
@@ -77,7 +94,8 @@ while continuar == "si":
     else:
         print("respuesta no valida")
         continue
-    
+    print()
+   
     preferencia = input("quieres escuchar una cancion para cantar o relajarte?: (cantar,relajarme)")
     preferencia = preferencia.lower().strip()
     if preferencia == "cantar":
@@ -88,6 +106,7 @@ while continuar == "si":
     else:
         print("respuesta no valida")
         continue
+    print()
     
     horario = input("es de dia o de noche?: (dia,noche)")
     horario = horario.lower().strip()
@@ -98,18 +117,30 @@ while continuar == "si":
     else:
         print("respuesta no valida")
         continue
-    
+   
     total = puntos_emocion + puntos_genero + puntos_actividad + puntos_preferencia + puntos_horario
     
-    print("PUNTOS OBTENIDOS:")
-    print(total)
-    print("Canciones recomendadas segun tu genero")
+    print()
+    print("============================================")
+    print("              TUS RESULTADOS")
+    print("============================================")
+    print()
+    print("PUNTOS OBTENIDOS:", total)
+
+    print()
+    print("--------------------------------------------")
+    print("       CANCIONES SEGUN TU GENERO")
+    print("--------------------------------------------")
+
     for fila in canciones_genero:
         if genero == fila[0]:
             for i in range(1,len(fila)):
-                print(i,fila[i])
+                print(i, "-", fila[i])
 
-    print("CANCIONES RECOMENDADAS")
+    print()
+    print("--------------------------------------------")
+    print("           TUS RECOMENDACIONES")
+    print("--------------------------------------------")
 
     if total in lista_canciones:
         canciones = lista_canciones[total]
@@ -118,8 +149,9 @@ while continuar == "si":
         print("3.",canciones[2])
         print("4.",canciones[3])
         print("5.",canciones[4])
+   
+    print()
         
-    
     def mensaje(total):
         if total >= 50 and total <= 70:
             print("¡Muy buena elección!")
@@ -129,6 +161,12 @@ while continuar == "si":
             print("¡Hoy necesitas canciones muy intensas!")
 
     mensaje(total)
+    
+    print()
+    print("--------------------------------------------")
+    print("          GUARDANDO HISTORIAL")
+    print("--------------------------------------------")
+    
     archivo = open("historial.txt","a")
 
     archivo.write("Nombre: " + nombre + "\n")
@@ -140,10 +178,15 @@ while continuar == "si":
     archivo.close()
 
     print("Informacion guardada correctamente")
+    print()
 
     continuar = input("quieres otra recomndación?:(si/no)")
 
-
+print()
+print("============================================")
+print("             CONSULTAR HISTORIAL")
+print("============================================")
+    
 
 consultar = input("Quieres consultar tu historial? si/no:")
 
@@ -153,16 +196,21 @@ if consultar == "si":
 
     contenido = archivo.read()
 
+    print()
+    print("--------------------------------------------")
+    print("             HISTORIAL MUSICAL")
+    print("--------------------------------------------")
     print(contenido)
 
     archivo.close()
 
     
-
-    continuar = input("quieres otra recomndación?:(si/no)")
-
-print("gracias por usar BUNNY-STATION :)")
-
+print()
+print("============================================")
+print("          GRACIAS POR USAR")
+print("             BUNNY-STATION")
+print("           ¡HASTA LA PROXIMA!")
+print("============================================")
 
 
     
