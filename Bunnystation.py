@@ -129,6 +129,35 @@ while continuar == "si":
             print("¡Hoy necesitas canciones muy intensas!")
 
     mensaje(total)
+    archivo = open("historial.txt","a")
+
+    archivo.write("Nombre: " + nombre + "\n")
+    archivo.write("Emocion: " + emocion + "\n")
+    archivo.write("Genero: " + genero + "\n")
+    archivo.write("Puntos obtenidos: " + str(total) + "\n")
+    archivo.write("----------------------\n")
+
+    archivo.close()
+
+    print("Informacion guardada correctamente")
+
+    continuar = input("quieres otra recomndación?:(si/no)")
+
+
+
+consultar = input("Quieres consultar tu historial? si/no:")
+
+if consultar == "si":
+
+    archivo = open("historial.txt","r")
+
+    contenido = archivo.read()
+
+    print(contenido)
+
+    archivo.close()
+
+    
 
     continuar = input("quieres otra recomndación?:(si/no)")
 
