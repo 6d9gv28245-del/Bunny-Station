@@ -16,7 +16,7 @@ def inicio_usuario():
     print()
     print("               MENU PRINCIPAL")
     print("--------------------------------------------")
-   inicio = input("estas listo para encontrar tu musica de hoy? si,no:")
+    inicio = input("estas listo para encontrar tu musica de hoy? si,no:")
     
     if inicio == "si":
         print ("Okay! continuemos")
