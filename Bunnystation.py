@@ -11,7 +11,6 @@ def saludar_usuario(nombre):
 nombre = input("Cual es tu nombre?:")
 saludo = saludar_usuario(nombre)
 
-
 def inicio_usuario():
     print()
     print("               MENU PRINCIPAL")
@@ -29,6 +28,9 @@ def inicio_usuario():
 
 inicio_usuario()
 
+archivo = open("historial.txt", "w")
+archivo.close()
+
 lista_canciones = {
     50:["Ni bien ni mal","Quien tu eres","Tenemos que hablar","Otra noche en miami","Solo de mi"],
     60:["Si veo a tu mama","La dificil","Pero ya no","La santa","La zona"],   
@@ -42,8 +44,8 @@ lista_canciones = {
 }
 canciones_genero = [
     ["pop","Moscow mule","Neverita","Efecto"],
-    ["Trap","Chambea","Booker t","Dakiti"],
-    ["Sadcore","Amorfoda","Otro atardecer","un coco"]
+    ["trap","Chambea","Booker t","Dakiti"],
+    ["sadcore","Amorfoda","Otro atardecer","un coco"]
 ]
 
 continuar = "si"
@@ -204,7 +206,9 @@ if consultar == "si":
 
     archivo.close()
 
-    
+archivo = open("historial.txt", "w")
+archivo.close()
+
 print()
 print("============================================")
 print("          GRACIAS POR USAR")
