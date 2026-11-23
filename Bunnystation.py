@@ -182,7 +182,7 @@ while continuar == "si":
     print("Informacion guardada correctamente")
     print()
 
-    continuar = input("quieres otra recomndación?:(si/no)")
+    continuar = input("quieres otra recomndación? (si/no): ")
 
 print()
 print("============================================")
@@ -190,7 +190,7 @@ print("             CONSULTAR HISTORIAL")
 print("============================================")
     
 
-consultar = input("Quieres consultar tu historial? si/no:")
+consultar = input("Quieres consultar tu historial? (si/no): ")
 
 if consultar == "si":
 
