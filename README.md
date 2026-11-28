@@ -11,7 +11,7 @@ Además, el programa cuenta con una sección que muestra canciones según el gé
 
 Instrucciones: 
 
-Descargar todos los archivos en una misma carpeta (main.py, archivos.py, cuestionario.py, pantalla.py, constantes.py, canciones.txt y historial.txt) y correr en terminal con:
+Descargar todos los archivos en una misma carpeta (BUNNY-STATION.py, archivos.py, cuestionario.py, pantalla.py, constantes.py, canciones.txt y historial.txt) y correr en terminal con:
 
 python BUNNY-STATION.py
 o abrir main.py en Thonny y dar botón de play.
