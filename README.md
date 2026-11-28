@@ -14,7 +14,7 @@ Instrucciones:
 Descargar todos los archivos en una misma carpeta (BUNNY-STATION.py, archivos.py, cuestionario.py, pantalla.py, constantes.py, canciones.txt y historial.txt) y correr en terminal con:
 
 python BUNNY-STATION.py
-o abrir main.py en Thonny y dar botón de play.
+o abrir BUNNY-STATION.py en Thonny y dar botón de play.
 
 Responder a las preguntas que aparecen en pantalla, el programa ya trae sus instrucciones y no usa bibliotecas externas, solo las estándar de Python.
 
